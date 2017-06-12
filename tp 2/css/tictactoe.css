@@ -1,0 +1,57 @@
+html {
+	background-color: #88f;
+	text-align: center;
+	align-items: center;
+}
+
+#jeu {
+	width: 17.4em; /* 3 cases x (5em 'cases' + 0.2emx2 'margin' + 0.2emx2 'border') */
+	height: 17.4em;
+	display: flex;
+	flex-wrap: wrap;
+	border : 1px solid black;
+	margin: auto;
+	margin-top : 2em;
+	border-radius: 0.8em;
+}
+
+.case  {
+	background-color: #333;
+	width : 5em;
+	height: 5em;
+	padding: 0em;
+	margin: 0.2em;
+	border : 0.2em solid #999;
+	border-radius: 0.8em;
+}
+
+#btnRestart {
+	background-color: #626;
+	width : 12em;
+	height: 3em;
+	margin: 0.2em;
+	border : 0.2em solid #999;
+	border-radius: 0.8em;
+	margin: auto;
+	margin-top: 1.2em;
+	text-align: center;
+	font-family: fantasy;
+	color: #f50;
+}
+
+/* (OPTIONNEL) Pour mettre en évidence la case sous le curseur je met un effet au passage de la souris */
+.case:hover{
+	border-color: #FFF;
+}
+
+
+/* les classes joueur1 et joueur2 permettent de visualiser quel joueur a jouer dans la case */
+/* Elles seront ajoutées ou supprimées dans le script */
+#jeu .joueur1 {
+	background-color: #f00;
+}
+
+#jeu .joueur2 {
+	background-color: #0f0;
+}
+
